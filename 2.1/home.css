@@ -1,0 +1,196 @@
+body {
+  background: yellow;
+  max-width: 1000px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+  font-size: 20px;
+}
+
+p {
+  padding: 1em;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+nav {
+  background: blue;
+  min-height:100px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin-right: 20%;
+  background-color: aqua;
+}
+
+main {
+  background: green;
+}
+
+section {
+  background: orange;
+}
+
+aside {
+  background: pink;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+footer {
+  background: brown;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  div {
+    background: yellow;
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 0.5em;
+  }
+
+  p {
+    padding: 1em;
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  nav {
+    background: blue;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  li {
+    display: inline;
+    margin-right: 20%;
+    background-color: aqua;
+  }
+
+  main {
+    background: green;
+  }
+
+  section {
+    background: orange;
+  }
+
+  aside {
+    background: pink;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  footer {
+    background: brown;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  div {
+    background: yellow;
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 0.5em;
+  }
+
+  p {
+    padding: 1em;
+  }
+
+  header {
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  nav {
+    background: blue;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  li {
+    display: inline;
+    margin-right: 15%;
+    font-size:20px;
+    background-color: aqua;
+  }
+
+  main {
+    background: green;
+  }
+
+  section {
+    background: orange;
+  }
+
+  aside {
+    grid-template-columns: 1fr 1fr;
+    background: pink;
+  }
+
+  dl {
+    grid-column-start: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  dd {
+    position: relative;
+    padding-bottom: 10%;
+  }
+
+  dt {
+    position: relative;
+    padding-bottom: 10%;
+  }
+
+  footer {
+    background: brown;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+}
