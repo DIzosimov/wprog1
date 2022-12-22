@@ -9,70 +9,76 @@
   <meta name="generator">
   <meta name="keywords" content="HTML">
   <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="history.css">
   <title></title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li id="navHome"> <a href="home.html"> Home </a> </li>
-        <li id="navNow"> <a href="now.html"> Now</a> </li>
-        <li id="navFuture"> <a href="future.html"> Future</a> </li>
-        <li id="navHistory"> <a href="history.html"> History </a> </li>
-    </ul>
-    </nav>
-  </header>
+  <div id="bodyContainer">
+    <header>
+      <nav>
+        <ul>
+          <li id="navHome"> <a href="home.html"> Home </a> </li>
+          <li id="navNow"> <a href="now.html"> Now</a> </li>
+          <li id="navFuture"> <a href="future.html"> Future</a> </li>
+          <li id="navHistory"> <a href="history.html"> History </a> </li>
+        </ul>
+      </nav>
+    </header>
 
-  <h1>
-    History of David
-  </h1>
-  <main>
-    <article>
-      <h2>
-        A Developer's Story
-      </h2>
-      I started developing by mistake at a bootcamp a few years ago and fell in
-      love with coding. From there I worked as a frontend developer for some time
-      and discovered I was actually decent at it. Then I ended up at university
-      studying it full time because of pesky COVID-19.
-      <table>
-        <caption>Career Roadmap</caption>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>First Half</th>
-            <th>Second Half</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2019</td>
-            <td>University in England</td>
-            <td rowspan="2">Bootcamp</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td>2020</td>
-            <td>Work</td>
-            <td>University</td>
-          </tr>
-          <tr>
-            <td>2021</td>
-            <td colspan="4">University</td>
-          </tr>
-          <tr>
-            <td>2022</td>
-            <td colspan="4">University</td>
-          </tr>
-        </tfoot>
-      </table>
-    </article>
-  </main>
-  <footer>
-    <a href="mailto:david.izosimov@gmail.com">Email Me</a>
-  </footer>
+    <div id="h1Container">
+      <object data="rudolph.svg" id="rudolphSVG"></object>
+      <h1 id="title">
+        History of David
+      </h1>
+    </div>
+    <main id="contentContainer">
+      <article>
+        <h2>
+          A Developer's Story
+        </h2>
+        I started developing by mistake at a bootcamp a few years ago and fell in
+        love with coding. From there I worked as a frontend developer for some time
+        and discovered I was actually decent at it. Then I ended up at university
+        studying it full time because of pesky COVID-19.
+        <table>
+          <caption id="tableCaption">Career Roadmap</caption>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>First Half</th>
+              <th>Second Half</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2019</td>
+              <td>University in England</td>
+              <td rowspan="2">Bootcamp</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>2020</td>
+              <td>Work</td>
+              <td>University</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td colspan="4">University</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td colspan="4">University</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+    </main>
+    <footer>
+      <a href="mailto:david.izosimov@gmail.com">Email Me</a>
+    </footer>
+  </div>
 </body>
 
 
