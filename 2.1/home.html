@@ -8,41 +8,54 @@
   <meta name="description" content="WPROG Course">
   <meta name="generator">
   <meta name="keywords" content="HTML">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="home.css">
   <title>Welcome to my website!</title>
 </head>
 
 <body>
+  <video id="backgroundVideo" autoplay loop muted>
+    <source src="snowflakes.mp4" type="video/mp4">
+  </video>
   <header>
     <nav>
       <ul>
-        <li> <a href="home.html"> Home </a> </li>
-        <li> <a href="now.html"> Now</a> </li>
-        <li> <a href="future.html"> Future</a> </li>
-        <li> <a href="history.html"> History </a> </li>
+        <li id="navHome"> <a href="home.html"> Home </a> </li>
+        <li id="navNow"> <a href="now.html"> Now</a> </li>
+        <li id="navFuture"> <a href="future.html"> Future</a> </li>
+        <li id="navHistory"> <a href="history.html"> History </a> </li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Welcome to my website!</h1>
-    <details>
-      Living it.
-      <summary>
-        Summary of my life
-      </summary>
-    </details>
-    <figure>
-      <img src="output.jpeg" alt="The Age of Artificial Intelligence">
-      <figcaption>
-        The Age of
-        Artificial Intelligence - Generated
-        by DeepAI
-      </figcaption>
-    </figure>
-    Feel free to explore the website with the links and find out about me.
+    <div id="h1Container">
+      <object data="rudolph.svg" width="130" height="130" id="rudolphSVG"></object>
+      <h1 id="title">
+        Welcome to my website!
+      </h1>
+    </div>
+    <div id="imageContainer">
+      <details id="details">
+        Living it.
+        <summary>
+          Summary of my life
+        </summary>
+      </details>
+      <figure id="image">
+        <meta name="https://labs.openai.com/e/Fpwo9AOGrccyKr6ZbHuxzT83" content="source of OpenAI">
+        <img src="output.jpeg" alt="The Age of Artificial Intelligence">
+        <figcaption>
+          The Age of
+          Artificial Intelligence - Generated
+          by DeepAI
+        </figcaption>
+      </figure>
+    </div>
     <aside>
-      Some fun things I like:
+      <h3 id="tableTitle">
+        Some fun things I like
+      </h3>
       <dl>
         <dt>Dogs</dt>
         <dd>Because they are cute</dd>
