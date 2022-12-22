@@ -1,0 +1,39 @@
+#title {
+    right: 7%;
+}
+
+#contentContainer {
+    background: #BD0019;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+}
+
+#bodyContainer {
+    height: 100%;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-spacing: 5px;
+    
+}
+
+#tableCaption {
+    font-size: 30px;
+    margin-top: 5%
+}
+
+th {
+    margin-left: 5%
+}

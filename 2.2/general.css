@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Christmas';
+  src: url(MountainsofChristmas-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: auto;
+  background: #BD0019;
+  letter-spacing: normal;
+}
+
+h1 {
+  padding: 20px;
+  color: #ECECEE;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background: #BD0019;
+  font-family: 'Christmas', sans-serif;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: auto;
+  list-style: none;
+  text-align: center;
+  height: inherit;
+  align-content: center;
+  padding-inline-start: 0px;
+}
+
+li {
+  display: inline;
+}
+
+#title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+  font-family: 'Christmas', sans-serif;
+}
+
+#rudolphSVG {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  width:6em; 
+  height:6em;
+}
+
+#navHome {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#navNow {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#navFuture {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#navHistory {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+#h1Container {
+  display: grid;
+  grid-template-columns: 0.2fr;
+  background: #458A0E;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #458A0E;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Christmas', sans-serif;
+}
+
+a:link {
+  color: #ECECEE;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ECECEE;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c0c0c0;
+}
+
+a:active {
+  color: #8f8f8f;
+}
+
+#backgroundVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width:679px) { /*Funkar inte i chrome responsive 
+                            viewer med "only screen and" på mobilvy*/
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #bodyContainer {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  body {
+    background: #ECECEE;
+    color: #ECECEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 680px) and (max-width: 1023px) {
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  nav {
+    height: 100%;
+  }
+
+  #bodyContainer {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  body {
+    background: #ECECEE;
+    color: #ECECEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) {
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #bodyContainer {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  body {
+    background: #ECECEE;
+    color: #ECECEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+}
