@@ -1,3 +1,7 @@
+body {
+  margin: auto;
+}
+
 h1 {
   padding: 20px;
   color: #ECECEE;
@@ -31,6 +35,19 @@ li {
   display: inline;
 }
 
+#title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+}
+
+#rudolphSVG {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  width:6em; 
+  height:6em;
+}
+
 #navHome {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -51,6 +68,13 @@ li {
   grid-column-end: 5;
 }
 
+#h1Container {
+  display: grid;
+  grid-template-columns: 0.2fr;
+  background: #458A0E;
+  align-items: center;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -59,6 +83,7 @@ footer {
   grid-column-end: 3;
   min-height: 50px;
   align-items: center;
+  justify-content: center;
 }
 
 a:link {

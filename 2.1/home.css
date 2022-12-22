@@ -2,29 +2,12 @@ p {
   padding: 1em;
 }
 
-#h1Container {
-  display: grid;
-  grid-template-columns: 0.2fr;
+main {
   background: #458A0E;
-  align-items: center;
 }
 
 #title {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  position: relative;
   right: 6%;
-}
-
-#rudolphSVG {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  width:6em; 
-  height:6em;
-}
-
-main {
-  background: #458A0E;
 }
 
 #imageContainer {
