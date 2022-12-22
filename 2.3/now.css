@@ -1,0 +1,40 @@
+#nowArticle {
+    background: #BD0019;
+}
+
+#title {
+    right: 10%;
+}
+
+#articleContentContainer {
+    padding-inline-start: 2%;
+}
+
+details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#formContainer {
+    background: #BD0019;
+}
+
+fieldset {
+    border-color: #458A0E;
+}
+
+input {
+    background: #ECECEE;
+}
+
+textarea {
+    background: #ECECEE;
+}
+
+select {
+    background: #ECECEE;
+}
+
+blockquote {
+    font: caption;
+}
