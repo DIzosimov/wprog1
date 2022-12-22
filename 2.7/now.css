@@ -1,0 +1,59 @@
+#nowArticle {
+    background: #BD0019;
+}
+
+#title {
+    right: 10%;
+}
+
+#textContainer {
+    padding-inline-start: 2%;
+}
+
+details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-inline-start: 2%;
+}
+
+#formContainer {
+    background: #BD0019;
+}
+
+fieldset {
+    border-color: #458A0E;
+}
+
+input {
+    background: #ECECEE;
+}
+
+textarea {
+    background: #ECECEE;
+}
+
+select {
+    background: #ECECEE;
+}
+
+blockquote {
+    font: caption;
+}
+
+picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #458A0E;
+    border: 10px solid #BD0019;
+}
+
+figcaption {
+    padding-left: 1%;
+}
+
+#leftArrowSVG {
+    width: 6%;
+    height: auto;
+    filter: invert(98%) sepia(2%) saturate(152%) hue-rotate(200deg) brightness(96%) contrast(96%);
+}

@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: red;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    position: absolute;
+    z-index: -1;
+}
+
+#blackBox {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    position: absolute;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.4);
+    bottom: 0%;
+}
+
+#fractalTitle {
+    opacity: 1;
+    padding-inline-start: 2%;
+}
+
+#fractalDescription {
+    opacity: 1;
+    padding-inline-start: 2%;
+    z-index: inherit;
+}
+
+#pauseButton {
+    width: 12.5%;
+    height: 3em;
+    position: relative;
+    bottom: 3em;
+    left: 1.8em;
+    margin-top: 4em;
+    opacity: 1;
+    z-index: inherit;
+    background: #ECECEE;
+    color: black;
+    font-size: 20px;
+}
+
+#pauseButton:hover {
+    color: #ECECEE;
+    background: #BD0019;
+}
