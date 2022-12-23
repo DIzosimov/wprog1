@@ -36,7 +36,7 @@ video {
 }
 
 #pauseButton {
-    width: 12.5%;
+    width: 6em;
     height: 3em;
     position: relative;
     bottom: 3em;
