@@ -34,10 +34,26 @@ ol {
     list-style: lao;
 }
 
+ol:hover {
+    list-style: decimal;
+    -webkit-animation: fadeinout 1.5s linear forwards;
+    animation: fadeinout 1.5s linear forwards;
+}
+
 body {
     height: 100vh;
 }
 
 #bodyContainer {
     height: 100%;
+}
+
+@-webkit-keyframes fadeinout {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
