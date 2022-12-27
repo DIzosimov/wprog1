@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="application-name" content="1">
+  <meta name="author" content="David Izosimov">
+  <meta name="description" content="WPROG Course">
+  <meta name="generator">
+  <meta name="keywords" content="HTML">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="now.css">
+  <title></title>
+</head>
+
+<body>
+  <div id="bodyContainer">
+    <header>
+      <nav>
+        <ul>
+          <li id="navHome"> <a href="home.html"> Home </a> </li>
+          <li id="navNow"> <a href="now.html"> Now</a> </li>
+          <li id="navFuture"> <a href="future.html"> Future</a> </li>
+          <li id="navHistory"> <a href="history.html"> History </a> </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="nowArticle">
+        <div id="h1Container">
+          <object data="rudolph.svg" id="rudolphSVG"></object>
+          <h1 id="title">
+            The present
+          </h1>
+        </div>
+        <div id="articleContentContainer">
+          <div id="textContainer">
+            <p>
+              As a student at the institution of computer science at stockholm university,
+              I am currently just looking to learn and live, worrying neither about my future
+              nor my past and trying to enjoy my time here.
+            </p>
+            A quote I live by:
+            <blockquote>
+              "<mark>The secret of health</mark> for both mind and body
+              is not to mourn for the past, worry about the future,
+              or anticipate troubles, but to live in the present moment
+              wisely and earnestly."~Buddah
+            </blockquote>
+          </div>
+          <aside id="articleAside">
+            <picture>
+              <source media="(min-width: 100px)" srcset="DALLE_streamer.png">
+              <img src="DALLE_streamer.png" alt="The Age of Artificial Intelligence" id="streamerPic" width="70%"
+                height="auto">
+              <object data="leftArrow.svg" id="leftArrowSVG"></object>
+              <figcaption id="figCaption">
+                An example of how it may look when I stream (from behind)
+              </figcaption>
+            </picture>
+            <details>
+              <summary>
+                Aside from that I enjoy streaming on twitch.tv for fun. Check out my schedule by pressing the arrow!
+              </summary>
+              <table>
+                <tr>
+                  <th>Monday</th>
+                  <th>Tuesday</th>
+                  <th>Wednesday</th>
+                  <th>Thursday</th>
+                  <th>Friday</th>
+                  <th>Saturday</th>
+                  <th>Sunday</th>
+                </tr>
+                <tr>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                  <td>18:00</td>
+                  <td>N/A</td>
+                  <td>N/A</td>
+                  <td>16:00</td>
+                  <td>18:00</td>
+                </tr>
+              </table>
+            </details>
+          </aside>
+      </article>
+
+      <div id="formContainer">
+        <form id="form" method="post" enctype="multipart/form-data"
+          action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+          <fieldset>
+            <legend>Inquiry Form: </legend>
+            <input type="text" id="formName" placeholder="Name" autofocus required
+              title="Only letters allowed, start with capital character">
+            <input type="email" id="formEmail" placeholder="Email" required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please follow format: x@x.x">
+            <input type="url" id="formWebsite" placeholder="Website" list="websites">
+            <datalist id="websites">
+              <option value="Facebook.com/">
+              <option value="Twitter.com/">
+              <option value="Instagram.com/">
+              <option value="LinkedIn.com/">
+            </datalist>
+            <div style="margin-bottom: 1%;">
+              <label for="checkbox" id="formCheckboxLabel">I want an answer</label>
+              <input type="checkbox" id="formCheckbox" value="true" name="checkbox" />
+            </div>
+            <div style="margin-bottom: 1%;">
+              <label for="formRadio1" id="formRadio1Label">I want a copy of the message sent to me</label>
+              <input type="radio" id="formRadio1" name="yes" value="true" />
+            </div>
+            <div style="margin-bottom: 1%;">
+              <label for="formRadio1" id="formRadio1Label">I do not want a copy of the message sent to me</label>
+              <input type="radio" id="formRadio2" name="no" value="false" />
+            </div>
+            <div style="margin-bottom: 1%;">
+              <label for="formList" id="formListLabel">Choose category of inquiry:</label>
+              <select id="formList" name="formList" required>
+                <option value="Website">Website</option>
+                <option value="Tutoring">Tutoring</option>
+                <option value="Work">Work</option>
+                <option value="Streaming">Streaming</option>
+              </select>
+            </div>
+            <div style="margin-bottom: 1%;">
+              <label id="formFileLabel">Select a file:</label>
+              <input type="file" id="formFile" name="formFile" />
+            </div>
+            <label id="textAreaLabel">Please write any further inqueries below:</label>
+            <textarea name="message" id="formMessage" rows="10" cols="20"
+              placeholder="Write your inquiry here"></textarea>
+            <input type="submit" value="Submit" id="formSubmit" class="floatButton">
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <a href="mailto:david.izosimov@gmail.com">Email Me</a>
+    </footer>
+  </div>
+  </div>
+</body>
+
+</html>

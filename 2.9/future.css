@@ -1,0 +1,43 @@
+#title {
+    right: 9%;
+}
+
+#contentContainer {
+    background: #BD0019;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding-inline-start: 2% ;
+}
+
+pre {
+    display: flex;
+    flex-direction: column;
+    white-space:unset;
+}
+
+p {
+    padding-inline-start: 2%;
+}
+
+li {
+   display: list-item;
+}
+
+ol {
+    padding-inline-start: 5%;
+    list-style: lao;
+}
+
+body {
+    height: 100vh;
+}
+
+#bodyContainer {
+    height: 100%;
+}
