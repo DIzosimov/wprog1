@@ -41,6 +41,14 @@ ul {
 
 li {
   display: inline;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
 }
 
 #title {

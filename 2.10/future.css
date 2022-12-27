@@ -36,8 +36,8 @@ ol {
 
 ol:hover {
     list-style: decimal;
-    -webkit-animation: fadeinout 1.5s linear forwards;
-    animation: fadeinout 1.5s linear forwards;
+    -webkit-animation: fadeinout 0.8s linear forwards;
+    animation: fadeinout 0.8s linear forwards;
 }
 
 body {
@@ -49,11 +49,11 @@ body {
 }
 
 @-webkit-keyframes fadeinout {
-  0% { opacity: 0; }
+  0%, 50% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 @keyframes fadeinout {
-  0% { opacity: 0; }
+  0%, 50% { opacity: 0; }
   100% { opacity: 1; }
 }
