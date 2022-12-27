@@ -34,6 +34,10 @@ ol {
     list-style: lao;
 }
 
+ol:hover {
+    list-style: decimal;
+}
+
 body {
     height: 100vh;
 }
