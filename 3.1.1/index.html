@@ -1,15 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="robots">
-  <meta http-equiv="refresh" content="0; url=js.html">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title></title>
+    <title>3.1.1</title>
+    <meta http-equiv="refresh" content="url=index.html">
 </head>
 
 <body>
+    <h1>Javascript objects 3.1.1</h1>
+    <h2>Array</h2>
+    <p>Please input something to add to the array:</p>
+    <input id="arrInput" type="text">
+    <button onclick="addToArray()">Add to Array</button>
+    <button onclick="emptyArray()">Remove elements</button>
+    <p id="arrayResult"></p>
+
+    <hr>
+
+    <h2>Boolean</h2>
+    <p>Integer checker:</p>
+    <input id="intInput" type="text">
+    <button onclick="checkIfNumber(document.getElementById('intInput').value)">Check value</button>
+    <p id="boolAnswer"></p>
+
+    <hr>
+
+    <h2>Date</h2>
+    <button onclick="displayYesterday()">Get Yesterday's Date</button>
+    <p id="date"></p>
+
+    <hr>
+
+    <h2>Math</h2>
+    <input id="numberInput" type="number">
+    <button onclick="showRandomNumber(document.getElementById('numberInput').value)">Get Number</button>
+    <p id="randomNumber"></p>
+
+    <hr>
+
+    <h2>Number</h2>
+    <input id="strInput" type="text">
+    <button onclick="stringToNumber(document.getElementById('strInput').value)">Convert String to Number</button>
+    <p id="numberResult"></p>
+
+    <hr>
+
+    <h2>String</h2>
+    <input id="stringArrInput" type="text">
+    <button onclick="addStringToArr(document.getElementById('stringArrInput').value)">Add string</button>
+    <button onclick="shuffleStrArr()">Shuffle words</button>
+    <button onclick="showNewString()">Show new string</button>
+    <p id="stringResult"></p>
+
+    <hr>
+
+    <h2>RegExp</h2>
+    <p>Input a date to check if it has a valid format:</p>
+    <input id="dateInput" type="text">
+    <button onclick="checkDateFormat()">Check Date</button>
+    <p id="dateResult"></p>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
