@@ -32,9 +32,14 @@ openButton.addEventListener("click", (e) => {
 }, false)
 
 const heading = document.getElementById('heading')
-let num = 100
+let num = 10
 const setIntervalValue = () => {
-  heading.innerHTML = "Countdown: " + num--
+  if (num > 0) {
+    num--
+    heading.innerHTML = "Countdown: " + num
+  } else {
+    heading.innerHTML = "Explosion!"
+  }
 }
 
 const interval = setInterval(() => {setIntervalValue()}, 3500)
@@ -42,6 +47,7 @@ const interval = setInterval(() => {setIntervalValue()}, 3500)
 const stopInterval = () => {
   clearInterval()
   heading.innerHTML = "Restart Initiated"
+  num = 10
 }
 
 
