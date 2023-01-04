@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3.1.3</title>
+</head>
+<body>
+  <h1 id="heading">Welcome!</h1>
+  <button id="intervalButton" onclick="stopInterval()">Press me!</button>
+
+  <hr>
+
+  <div id="h2Resize">
+  </div>
+
+  <hr>
+
+  <form>
+    <label id="name">Name:</label>
+    <input id="nameInput" type="text" placeholder="Name">
+    <button onclick="nameCheck(document.getElementById('nameInput').value)">Check name</button>
+    <button id="removeButton">Remove listener</button>
+
+    <hr>
+
+    <label id="url">Input URL:</label>
+    <input id="urlInput" type="text" placeholder="URL">
+    <button id="addButton" onclick="">Open URL</button>
+  </form>
+
+  <hr>
+
+  <form id="formJS">
+    <label id="email">Email:</label>
+    <input id="emailInput" type="email" placeholder="Email">
+    <label id="password">Password:</label>
+    <input id="passwordInput" type="password" placeholder="Password">
+    <button onclick="formReset()">Reset form</button>
+  </form>
+
+  <hr>
+
+  <h2 id="enterH2">Press the enter key!</h2>
+  <script src="script.js"></script>
+</body>
+</html>
