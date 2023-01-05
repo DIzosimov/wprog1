@@ -1,0 +1,34 @@
+#block {
+    height: 100px; 
+    width: 150px; 
+    background-color: red;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 100px;
+    min-height: 30px;
+    margin-top: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+}
+
+#buttons {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
