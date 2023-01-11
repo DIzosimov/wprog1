@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styling/general.css">
   <link rel="stylesheet" href="styling/home.css">
+  <link rel="stylesheet" href="styling/dropdown.css">
   <title>Gesällprov</title>
 </head>
 
@@ -21,6 +22,20 @@
         <h1 id="title">
           InstaWeather
         </h1>
+      </div>
+  
+      <div id="drop" class="sec-center"> 	
+        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+        <label class="for-dropdown" for="dropdown">Menu<i class="uil uil-arrow-down">
+          <img alt="arrow down" id="arrowDown" src="assets/arrowDown.svg" width="30" height="30">
+        </i></label>
+        <div class="section-dropdown"> 
+          <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+          <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+          <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub <i class="uil uil-plus"></i></label>
+          <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+          <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+        </div>
       </div>
       <div id="navContainer" class="navContainer circleAnimation">
         <a href="home.html"> Home </a>

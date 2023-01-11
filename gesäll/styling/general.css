@@ -15,6 +15,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Cloud', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 #h1Container {
@@ -82,53 +84,12 @@ a:active {
   color: #c0c0c0;
 }
 
-div.navContainer {
-  margin: 0 auto;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 28px;
-  margin-top: -2%;
-}
-
-div.navContainer a {
-  text-decoration: none;
-  margin: 10px 2.5em;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-/* Circle behind */
-div.circleAnimation a:before,
-div.circleAnimation a:after {
-  position: absolute;
-  opacity: 0.85;
-  height: 100%;
-  width: 2px;
-  content: '';
-  background: #c0c0c0;
-  transition: all 0.3s;
-}
-
-div.circleAnimation a:before {
-  left: 0px;
-  top: 0px;
-}
-
-div.circleAnimation a:after {
-  right: 0px;
-  bottom: 0px;
-}
-
-div.circleAnimation a:hover:before,
-div.circleAnimation a:hover:after {
-  opacity: 0.85;
-  height: 2px;
-  width: 100%;
+#drop {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  align-self: center;
+  width: fit-content;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -154,15 +115,9 @@ div.circleAnimation a:hover:after {
     overflow: hidden;
   }
 
-  div.navContainer a {
-    font-size: 20px;
-    margin: 10px 2.25em;
-  }
-
   #title {
-    padding-left: 0.5em;
-    font-family: 'Snowball', sans-serif;
     font-size: 26px;
+    align-self: center;
   }
 
   #h1Container {
@@ -192,14 +147,7 @@ div.circleAnimation a:hover:after {
     overflow: hidden;
   }
 
-  div.navContainer a {
-    font-size: 20px;
-    margin: 10px 2.25em;
-  }
-
   #title {
-    padding-left: 0.5em;
-    font-family: 'Snowball', sans-serif;
     font-size: 26px;
   }
 }
@@ -224,13 +172,6 @@ div.circleAnimation a:hover:after {
   }
 
   #title {
-    padding-left: 0.5em;
-    font-family: 'Snowball', sans-serif;
     font-size: 36px;
-  }
-
-  div.navContainer a {
-    font-size: 26px;
-    margin: 10px 2em;
   }
 }
