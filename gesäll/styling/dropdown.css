@@ -125,7 +125,7 @@
   transition: all 200ms linear;
 }
 
-a {
+.section-dropdown a {
   position: relative;
   color: #fff;
   transition: all 200ms linear;
@@ -134,7 +134,7 @@ a {
   font-size: 15px;
   border-radius: 2px;
   padding: 5px 0;
-  padding-left: 20px;
+  padding-left: 5px;
   padding-right: 15px;
   margin: 2px 0;
   text-align: left;
@@ -146,73 +146,15 @@ a {
   -ms-align-items: center;
   align-items: center;
   justify-content: space-between;
-    -ms-flex-pack: distribute;
+  -ms-flex-pack: distribute;
 }
-a .uil {
+.seciton-dropdown a .uil {
   font-size: 22px;
-}
-.dropdown-sub:checked + label,
-.dropdown-sub:not(:checked) + label{
-  position: relative;
-  color: #fff;
-  transition: all 200ms linear;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  border-radius: 2px;
-  padding: 5px 0;
-  padding-left: 20px;
-  padding-right: 15px;
-  text-align: left;
-  text-decoration: none;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: space-between;
-    -ms-flex-pack: distribute;
-    cursor: pointer;
-}
-.dropdown-sub:checked + label .uil,
-.dropdown-sub:not(:checked) + label .uil{
-  font-size: 22px;
-}
-.dropdown-sub:not(:checked) + label .uil {
-  transition: transform 200ms linear;
-}
-.dropdown-sub:checked + label .uil {
-  transform: rotate(135deg);
-  transition: transform 200ms linear;
-}
-.dropdown-sub:checked + label:hover,
-.dropdown-sub:not(:checked) + label:hover{
-  background-color: #7c5295;
+  padding-left: 12px;
 }
 
-.section-dropdown-sub {
-  position: relative;
-  display: block;
-  width: 100%;
-  pointer-events: none;
-  opacity: 0;
-  max-height: 0;
-  padding-left: 10px;
-  padding-right: 3px;
-  overflow: hidden;
-  transition: all 200ms linear;
-}
-.dropdown-sub:checked ~ .section-dropdown-sub{
-  pointer-events: auto;
-  opacity: 1;
-  max-height: 999px;
-}
-.section-dropdown-sub a {
-  font-size: 14px;
-}
-.section-dropdown-sub a .uil {
-  font-size: 20px;
+.section-dropdown a:hover {
+    background-color: #3c1361;
 }
 
 #arrowDown {

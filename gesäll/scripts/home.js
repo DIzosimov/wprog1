@@ -94,12 +94,13 @@ const windowResize = () => {
   let dropdown = document.getElementById('drop')
   if (width < 768) {
     nav.style.display = "none"
-    //dropdown.style.display = "block"
+    dropdown.style.display = "block"
   } 
   if (nav.style.display !== "flex" && width >= 768) {
     document.getElementById('navContainer').style.display = "flex"
-    //document.getElementById('dropdown').style.display = "none"
+    dropdown.style.display = "none"
   }
 }
 
 window.onresize = windowResize;
+window.onload = windowResize;
