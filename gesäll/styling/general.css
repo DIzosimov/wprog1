@@ -162,6 +162,11 @@ div.circleAnimation a:hover:after {
     grid-column-end: 3;
     margin-top: -2%;
   }
+
+  div.navContainer a {
+      font-size: 20px;
+      margin: 10px 2.25em;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -170,6 +175,10 @@ div.circleAnimation a:hover:after {
   #title {
     font-size: 26px;
   }
+
+  div.navContainer a {
+      font-size: 20px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -178,4 +187,8 @@ div.circleAnimation a:hover:after {
   #title {
     font-size: 36px;
   }
+
+  div.navContainer a {
+      font-size: 26px;
+    }
 }

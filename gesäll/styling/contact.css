@@ -1,0 +1,14 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#svg {
+    z-index: -1;
+}
+
+#contactForm {
+    z-index: 1;
+}

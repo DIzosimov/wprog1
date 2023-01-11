@@ -5,11 +5,75 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styling/general.css">
+  <link rel="stylesheet" href="styling/contact.css">
+  <link rel="stylesheet" href="styling/dropdown.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <title>Contact Page</title>
 </head>
 
 <body>
+  <div class="bodyContainer">
+    <header>
+      <div id="h1Container">
+        <h1 id="title">
+          InstaWeather
+        </h1>
+      </div>
 
+      <div id="dropdownMenu" class="sec-center">
+        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+        <label class="for-dropdown" for="dropdown">
+          Menu
+          <i class="uil uil-arrow-down">
+            <img alt="arrow down" id="arrowDown" src="assets/arrowDown.svg" width="30" height="30">
+          </i>
+        </label>
+        <div class="section-dropdown">
+          <a href="home.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div id="navContainer" class="navContainer circleAnimation">
+        <a href="home.html"> Home </a>
+        <a href="contact.html"> Contact</a>
+        <a href="about.html"> About</a>
+      </div>
+    </header>
+    <div id="container" class="container">
+      <div id="svgContainer" class="svgContainer">
+        <object id="svg" class="svg" data="assets/square.svg" width="750px" height="800px"></object>
+        <form id="contactForm" class="contactForm">
+          <div class="title">
+            <h1>Contact Me</h1>
+          </div>
+          <input name="name" class="nameInput" type="text" value="name" required>
+          <span class="spanTranslate">Your Name</span>
+
+          <input name="email" class="emailInput" type="email" value="email" required>
+          <span class="spanTranslate">Your Email</span>
+
+          <input name="subject" class="subjectInput" type="text" value="subject">
+          <span class="spanTranslate">Subject (Optional)</span>
+
+          <textarea name="message" class="messageInput" type="text" value="message" rows="1" required></textarea>
+          <span class="messageSpan">Message</span>
+
+          <div class="buttonContainer">
+            <button type="submit" class="submitButton">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="submittedContainer">
+      <p>Message sent</p>
+    </div>
+  </div>
+  <script src="scripts/general.js"></script>
+  <script src="scripts/contact.js"></script>
 </body>
 
 </html>

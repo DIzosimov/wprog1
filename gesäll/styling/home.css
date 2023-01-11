@@ -15,10 +15,7 @@
     /*Funkar inte i chrome responsive 
                               viewer med "only screen and" på mobilvy*/
     /*Insert dropdown menu*/
-    div.navContainer a {
-      font-size: 20px;
-      margin: 10px 2.25em;
-    }
+    
   
     #title {
       padding-left: 0.5em;
@@ -26,28 +23,16 @@
       font-size: 26px;
       align-self: center;
     }
-  
-    #h1Container {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      margin-top: -2%;
-    }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    div.navContainer a {
-      font-size: 20px;
-      /* margin: 10px 2.25em; */
-    }
+    
   }
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1024px) and (max-width: 1240px) {
-    div.navContainer a {
-      font-size: 26px;
-      /* margin: 10px 2em; */
-    }
+    
   }
 
 
