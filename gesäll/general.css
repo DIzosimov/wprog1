@@ -1,12 +1,9 @@
-@font-face {
-  font-family: 'Christmas';
-  src: url(MountainsofChristmas-Regular.ttf) format('truetype');
-}
-
 body {
   margin: auto;
   background: #BD0019;
   letter-spacing: normal;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -58,13 +55,6 @@ li:hover {
   font-family: 'Christmas', sans-serif;
 }
 
-#rudolphSVG {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  width:6em; 
-  height:6em;
-}
-
 #navHome {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -101,7 +91,6 @@ footer {
   min-height: 50px;
   align-items: center;
   justify-content: center;
-  font-family: 'Christmas', sans-serif;
 }
 
 a:link {
@@ -122,34 +111,12 @@ a:active {
   color: #8f8f8f;
 }
 
-#backgroundVideo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
 details:hover {
   cursor: pointer;
 }
 
-
-@media (max-width: 460px) {
-  body {
-    width: 320px;
-  }
-  audio {
-    width: 200px;
-  }
-}
-
 /* Extra small devices (phones, 600px and down) */
-@media (max-width:679px) { /*Funkar inte i chrome responsive 
+@media (max-width:412px) { /*Funkar inte i chrome responsive 
                             viewer med "only screen and" på mobilvy*/
 
   header {
@@ -158,7 +125,8 @@ details:hover {
   }
 
   #bodyContainer {
-    max-width: 400px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -170,12 +138,14 @@ details:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 12px;
+    font-size: 20px;
+    width: 53vh;
+    height: 100%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 680px) and (max-width: 1023px) {
+@media only screen and (min-width: 421px) and (max-width: 1023px) {
 
   header {
     grid-column-start: 1;
@@ -187,7 +157,8 @@ details:hover {
   }
 
   #bodyContainer {
-    max-width: 800px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -212,7 +183,8 @@ details:hover {
   }
 
   #bodyContainer {
-    max-width: 1000px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;

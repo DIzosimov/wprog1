@@ -1,0 +1,116 @@
+#nowArticle {
+    background: #BD0019;
+}
+
+#title {
+    right: 10%;
+}
+
+#textContainer {
+    padding-inline-start: 2%;
+}
+
+details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-inline-start: 2%;
+}
+
+#formContainer {
+    background: #BD0019;
+}
+
+fieldset {
+    border-color: #458A0E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background: #ECECEE;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-color: #458A0E;
+    border-radius: 0.5em;
+    border-width: 0.3em;
+    text-align: center;
+}
+
+input:focus {
+    background-color: turquoise;
+    color: #ECECEE;
+}
+
+textarea {
+    background: #ECECEE;
+}
+
+select {
+    background: #ECECEE;
+}
+
+blockquote {
+    font: caption;
+}
+
+picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #458A0E;
+    border: 10px solid #BD0019;
+}
+
+figcaption {
+    padding-left: 1%;
+}
+
+#leftArrowSVG {
+    width: 6%;
+    height: auto;
+    filter: invert(98%) sepia(2%) saturate(152%) hue-rotate(200deg) brightness(96%) contrast(96%);
+}
+
+#formEmail {
+    background-image: url(mailIcon.svg);
+    background-repeat: repeat-y;
+    background-position: 0%;
+}
+
+#formFile {
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    border: 1px solid black;
+}
+
+#formMessage {
+    resize: none;
+}
+
+#formSubmit:hover {
+    color: #ECECEE;
+    background: #458A0E;
+}
+
+#textAreaLabel {
+    margin-bottom: 2%;
+}
+
+.floatButton {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.floatButton:hover, .floatButton:focus, .floatButton:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }

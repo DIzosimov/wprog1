@@ -138,6 +138,16 @@ details:hover {
   cursor: pointer;
 }
 
+
+@media (max-width: 460px) {
+  body {
+    width: 320px;
+  }
+  audio {
+    width: 200px;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media (max-width:679px) { /*Funkar inte i chrome responsive 
                             viewer med "only screen and" på mobilvy*/
@@ -160,7 +170,7 @@ details:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 20px;
+    font-size: 12px;
   }
 }
 
