@@ -9,78 +9,41 @@
   <meta name="generator">
   <meta name="keywords" content="HTML">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="home.css">
-  <title>Welcome to my website!</title>
+  <link rel="stylesheet" href="styling/general.css">
+  <link rel="stylesheet" href="styling/home.css">
+  <title>Gesällprov</title>
 </head>
 
 <body>
   <div id="bodyContainer">
     <header>
-      <nav>
-        <ul>
-          <li id="navHome"> <a href="home.html"> Home </a> </li>
-          <li id="navNow"> <a href="now.html"> Now</a> </li>
-          <li id="navFuture"> <a href="future.html"> Future</a> </li>
-          <li id="navHistory"> <a href="history.html"> History </a> </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
       <div id="h1Container">
-        <object data="rudolph.svg" id="rudolphSVG"></object>
         <h1 id="title">
-          Welcome to my website!
+          InstaWeather
         </h1>
       </div>
-      <div id="imageContainer">
-        <details id="details">
-          Living it.
-          <summary>
-            Summary of my life
-          </summary>
-        </details>
-        <figure id="image">
-          <meta name="https://labs.openai.com/e/Fpwo9AOGrccyKr6ZbHuxzT83" content="source of OpenAI">
-          <img src="output.jpeg" alt="The Age of Artificial Intelligence" id="aiImg">
-          <figcaption>
-            The Age of
-            Artificial Intelligence - Generated
-            by DeepAI
-          </figcaption>
-        </figure>
+      <div id="navContainer" class="navContainer circleAnimation">
+        <a href="home.html"> Home </a>
+        <a href="contact.html"> Contact</a>
+        <a href="now.html"> About</a>
       </div>
-      <aside>
-        <h3 id="tableTitle">
-          Some fun things I like
-        </h3>
-        <dl>
-          <dt>Dogs</dt>
-          <dd>Because they are cute</dd>
-          <dt>Coding</dt>
-          <dd>Because it brings order to chaos</dd>
-          <dt>Want to enjoy this fractal video fully? 
-            <br> Then 
-            <a id="movieLink" href="movie.html">click me</a>
-          </dt>
-          <dd id="fractalContainer"><br>
-            <video id="fractalVideo" controls loop autoplay muted>
-              <source src="fractalVideo.mp4" type="video/mp4">
-            </video>
-          </dd>
-          <dt>Music</dt>
-          <dd>
-            <audio controls loop>
-              <source src="FASSounds - Sunny Summer.mp3" type="audio/mpeg">
-            </audio>
-          </dd>
-        </dl>
-      </aside>
+    </header>
+
+    <main>
+      <form id="myForm">
+        <label for="country">Enter Country Code:</label>
+        <input class="country" id="country" name="country" type="text" placeholder="SE" />
+        <label for="city">Enter City:</label>
+        <input class="city" id="city" name="city" type="text" placeholder="City" />
+        <input type="submit" value="Get Weather" />
+      </form>
     </main>
     <footer>
-      <a href="mailto:david.izosimov@gmail.com">Email Me</a>
+      <h3>Contact Me</h3>
+      <a href="mailto:david.izosimov@gmail.com">Email</a>
     </footer>
   </div>
+  <script src="scripts/home.js"></script>
 </body>
 
 </html>
