@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="styling/general.css">
   <link rel="stylesheet" href="styling/home.css">
   <link rel="stylesheet" href="styling/dropdown.css">
+  <link rel="stylesheet" href="styling/rain.css">
+  <link rel="stylesheet" href="styling/snow.css">
+  <link rel="stylesheet" href="styling/sun.css">
+  <link rel="stylesheet" href="styling/cloudy.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <title>Gesällprov</title>
 </head>
 
@@ -23,22 +28,19 @@
           InstaWeather
         </h1>
       </div>
-  
-      <div id="drop" class="sec-center"> 	
-        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-        <label class="for-dropdown" for="dropdown">Menu<i class="uil uil-arrow-down">
-          <img alt="arrow down" id="arrowDown" src="assets/arrowDown.svg" width="30" height="30">
-        </i></label>
-        <div class="section-dropdown"> 
-          <a href="home.html">Home <i class="uil uil-arrow-right">
-            <img alt="arrow right" id="arrowRight" src="assets/arrowRight.svg" width="25" height="25">
-          </i></a>
-          <a href="contact.html">Contact <i class="uil uil-arrow-right">
-            <img alt="arrow right" id="arrowRight" src="assets/arrowRight.svg" width="25" height="25">
-          </i></a>
-          <a href="about.html">About <i class="uil uil-arrow-right">
-            <img alt="arrow right" id="arrowRight" src="assets/arrowRight.svg" width="25" height="25">
-          </i></a>
+
+      <div id="dropdownMenu" class="sec-center">
+        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+        <label class="for-dropdown" for="dropdown">
+          Menu
+          <i class="uil uil-arrow-down">
+            <img alt="arrow down" id="arrowDown" src="assets/arrowDown.svg" width="30" height="30">
+          </i>
+        </label>
+        <div class="section-dropdown">
+          <a href="home.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
         </div>
       </div>
       <div id="navContainer" class="navContainer circleAnimation">
@@ -49,20 +51,42 @@
     </header>
 
     <main>
+      <!-- Add more depending on weather -->
+
+      <div id="rainFront" class="rain front-row"></div>
+      <div id="rainBack" class="rain back-row"></div>
+
+      <div id="snowflakes" class="snowflakes" aria-hidden="true"></div>
+
+      <div class="sun" id="sun">
+        <div class="ray_box">
+          <div class="ray ray1"></div>
+          <div class="ray ray2"></div>
+          <div class="ray ray3"></div>
+          <div class="ray ray4"></div>
+          <div class="ray ray5"></div>
+          <div class="ray ray6"></div>
+          <div class="ray ray7"></div>
+          <div class="ray ray8"></div>
+          <div class="ray ray9"></div>
+          <div class="ray ray10"></div>
+        </div>
+      </div>
+
+      <div class="stars" id="stars">
+        <div class="clouds"></div>
+      </div>
       <form id="myForm">
-        <label for="country">Enter Country Code:</label>
+        <label for="country">Enter Country:</label>
         <input class="country" id="country" name="country" type="text" placeholder="SE" />
         <label for="city">Enter City:</label>
         <input class="city" id="city" name="city" type="text" placeholder="City" />
         <input type="submit" value="Get Weather" />
       </form>
     </main>
-    <footer>
-      <h3>Contact Me</h3>
-      <a href="mailto:david.izosimov@gmail.com">Email</a>
-    </footer>
   </div>
   <script src="scripts/home.js"></script>
+  <script src="scripts/general.js"></script>
 </body>
 
 </html>
