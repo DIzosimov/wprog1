@@ -77,11 +77,18 @@
         <div class="clouds"></div>
       </div>
       <form id="myForm">
-        <label for="country">Enter Country:</label>
-        <input class="country" id="country" name="country" type="text" placeholder="SE" />
-        <label for="city">Enter City:</label>
-        <input class="city" id="city" name="city" type="text" placeholder="City" />
-        <input type="submit" value="Get Weather" />
+        <legend>Search Weather </legend>
+        <div id="countryContainer">
+          <label for="country">Enter Country:</label>
+          <input class="country" id="country" name="country" type="text" placeholder="Country" />
+          <span class="focusBorder"></span>
+        </div>
+        <div id="cityContainer">
+          <label for="city">Enter City:</label>
+          <input class="city" id="city" name="city" type="text" placeholder="City" />
+          <span class="focusBorder"></span>
+        </div>
+        <input id="submitButton" type="submit" value="Get Weather" />
       </form>
     </main>
   </div>

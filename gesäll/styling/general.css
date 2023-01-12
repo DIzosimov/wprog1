@@ -109,7 +109,7 @@ div.navContainer {
 
 div.navContainer a {
   text-decoration: none;
-  margin: 10px 2.5em;
+  margin: 10px 2em;
   padding: 10px 10px;
   position: relative;
   z-index: 0;
@@ -165,7 +165,6 @@ div.circleAnimation a:hover:after {
 
   div.navContainer a {
       font-size: 20px;
-      margin: 10px 2.25em;
     }
 }
 
@@ -173,7 +172,7 @@ div.circleAnimation a:hover:after {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
   #title {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   div.navContainer a {

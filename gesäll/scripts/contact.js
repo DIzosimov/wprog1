@@ -1,15 +1,31 @@
-const createSquare = () => {
-    let doc = document.getElementById("svgContainer");
-    let svg = document.getElementById("svg");
-    svg.data = "assets/square.svg"
-    svg.width = "800px";
-    svg.height = "750px";
-    doc.append(svg);
+const form = document.getElementById("contactForm")
 
+
+const windowResize = () => {
+    let width = window.innerWidth;
+    let nav = document.getElementById('navContainer')
+    let dropdown = document.getElementById('dropdownMenu')
+    let rect = document.getElementsByTagName("rect");
+    let form = document.getElementById("contactForm");
+    if (width < 768) {
+        nav.style.display = "none"
+        dropdown.style.display = "block"
+    }
+    if (width < 520 && width > 420) {
+        rect[0].style.height = "115%";
+        form.style.top = "31.5vh";
+    } else if (width < 420) {
+        rect[0].style.height = "125%";
+        form.style.top = "32.5vh";
+    } else {
+        rect[0].style.height = "90%";
+        form.style.top = "22.5vh";
+    }
+    if (nav.style.display !== "flex" && width >= 768) {
+        document.getElementById('navContainer').style.display = "flex"
+        dropdown.style.display = "none"
+    }
 }
 
-createSquare()
-
-/* document.onload = setTimeout(() => {
-    createSquare();
-}, 2000); */
+window.onresize = windowResize
+window.onload = windowResize

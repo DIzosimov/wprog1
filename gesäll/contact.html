@@ -43,22 +43,33 @@
     </header>
     <div id="container" class="container">
       <div id="svgContainer" class="svgContainer">
-        <object id="svg" class="svg" data="assets/square.svg" width="750px" height="800px"></object>
-        <form id="contactForm" class="contactForm">
+        <svg id="svg" version="1.1" width="100%" height="100%" viewBox="0 0 800 800" fill="none" stroke="#000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff8a00" />
+              <stop offset="100%" stop-color="#e52e71" />
+            </linearGradient>
+          </defs>
+          <rect 
+            width="750" 
+            height="750" 
+            style="fill:#fff;stroke-width:20;stroke:url(#linear);fill-opacity:0.0"
+          />
+        </svg>
+        <form 
+        action="mailto:david.izosimov@gmail.com" 
+        method="GET" 
+        enctype="text/plain" 
+        id="contactForm" 
+        class="contactForm">
           <div class="title">
             <h1>Contact Me</h1>
           </div>
-          <input name="name" class="nameInput" type="text" value="name" required>
-          <span class="spanTranslate">Your Name</span>
+          <input name="name" class="nameInput" type="text" placeholder="Name" required>
 
-          <input name="email" class="emailInput" type="email" value="email" required>
-          <span class="spanTranslate">Your Email</span>
+          <input name="subject" class="subjectInput" type="text" placeholder="Subject">
 
-          <input name="subject" class="subjectInput" type="text" value="subject">
-          <span class="spanTranslate">Subject (Optional)</span>
-
-          <textarea name="message" class="messageInput" type="text" value="message" rows="1" required></textarea>
-          <span class="messageSpan">Message</span>
+          <textarea name="body" class="messageInput" type="text" placeholder="Message" rows="1" required></textarea>
 
           <div class="buttonContainer">
             <button type="submit" class="submitButton">
@@ -72,7 +83,7 @@
       <p>Message sent</p>
     </div>
   </div>
-  <script src="scripts/general.js"></script>
+  <!-- <script src="scripts/general.js"></script> -->
   <script src="scripts/contact.js"></script>
 </body>
 

@@ -18,11 +18,11 @@
   width: 15px;
   height: 120px;
   pointer-events: none;
-  animation: drop 0.5s linear infinite;
+  animation: rainDrop 0.5s linear infinite;
   display: block;
 }
 
-@keyframes drop {
+@keyframes rainDrop {
   0% {
     transform: translateY(0vh);
   }

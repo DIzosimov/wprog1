@@ -1,39 +1,123 @@
 @font-face {
     font-family: 'Cloud';
     src: url(../assets/cloudFont.ttf) format('truetype');
-  }
+}
 
-
-  form {
+form {
+    color: #202020;
     z-index: 5;
-  }
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    border-left: 1px solid #ECECEE;
+    border-top: 1px solid #ECECEE;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 40px -6px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+}
 
+legend {
+    font-size: 20px;
+    font-family: 'Cloud', sans-serif;
+    color: #ECECEE;
+}
 
-  /* Extra small devices (phones, 600px and down) */
+.country {
+    margin-top: 10%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #ECECEE;
+    border-bottom: 2px solid;
+    transition: border 0.5s ease-in-out;
+    resize: vertical;
+    display: flex;
+    z-index: 5;
+}
+
+.country:focus {
+    outline: none;
+    border-bottom-color: #ff8a00;
+}
+
+input::placeholder {
+    color: #ECECEE;
+}
+
+.city {
+    margin-top: 10%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #ECECEE;
+    border-bottom: 2px solid;
+    transition: border 0.5s ease-in-out;
+    resize: vertical;
+    display: flex;
+    z-index: 5;
+}
+
+.city:focus {
+    outline: none;
+    border-bottom-color: #ff8a00;
+}
+
+#submitButton {
+    width: 8rem;
+    height: 5rem;
+    margin-top: 20%;
+    font-size: 16px;
+    background: transparent;
+    border:none;
+    color: #ECECEE;
+}
+
+#submitButton::before {
+    background: #ff8a00;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+}
+
+#submitButton:hover::before {
+    transform: scale(1)
+}
+
+#submitButton:hover:before {
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.4);
+    background: #ff8a00;
+}
+
+/* Extra small devices (phones, 600px and down) */
 @media (max-width:767px) {
 
     /*Funkar inte i chrome responsive 
                               viewer med "only screen and" på mobilvy*/
     /*Insert dropdown menu*/
-    
-  
+
+
     #title {
-      padding-left: 0.5em;
-      font-family: 'Snowball', sans-serif;
-      font-size: 26px;
-      align-self: center;
+        padding-left: 0.5em;
+        font-family: 'Snowball', sans-serif;
+        font-size: 26px;
+        align-self: center;
     }
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    
-  }
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1024px) and (max-width: 1240px) {
-    
-  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) and (max-width: 1240px) {}
 
 
 /*Dim or brighten screen depending on weather
