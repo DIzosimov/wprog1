@@ -70,13 +70,12 @@ const makeItCloudy = () => {
   //clear out everything
   clearWeather();
 
-  let cloudIncrement = 3
+  let cloudIncrement = 0
   let clouds = ""
   while (cloudIncrement < 6) {
     ++cloudIncrement
     clouds += `<div class="bigCloud" id="cloud${cloudIncrement}"><div class="largeCircle" id="circ1"><div class="largeCircle" id="circ1shadow"></div></div><div class="middleCircle" id="circ2"><div class="middleCircle" id="circ2shadow"></div></div><div class="middleCircle" id="circ3"><div class="middleCircle" id="circ3shadow"></div></div><div class="smallCircle" id="circ4"></div><div class="smallCircle" id="circ5"><div class="smallCircle" id="circ5shadow"></div></div><div class="smallCircle" id="circ6" <div class="smallCircle" id="circ6shadow"></div></div></div>`
   }
-  $('.stars').append(stars);
   $('.clouds').append(clouds);
 }
 

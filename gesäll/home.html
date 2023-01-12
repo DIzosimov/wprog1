@@ -51,8 +51,6 @@
     </header>
 
     <main>
-      <!-- Add more depending on weather -->
-
       <div id="rainFront" class="rain front-row"></div>
       <div id="rainBack" class="rain back-row"></div>
 
@@ -73,22 +71,19 @@
         </div>
       </div>
 
-      <div class="stars" id="stars">
-        <div class="clouds"></div>
-      </div>
+      <div class="clouds"></div>
+
       <form id="myForm">
         <legend>Search Weather </legend>
-        <div id="countryContainer">
+        <div class="inputContainer">
           <label for="country">Enter Country:</label>
           <input class="country" id="country" name="country" type="text" placeholder="Country" />
-          <span class="focusBorder"></span>
         </div>
-        <div id="cityContainer">
+        <div class="inputContainer">
           <label for="city">Enter City:</label>
           <input class="city" id="city" name="city" type="text" placeholder="City" />
-          <span class="focusBorder"></span>
         </div>
-        <input id="submitButton" type="submit" value="Get Weather" />
+        <button id="submitButton" type="submit" value="Get Weather">Get Weather</button>
       </form>
     </main>
   </div>
