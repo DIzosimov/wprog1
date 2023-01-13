@@ -159,3 +159,16 @@
     position: relative;
     top: 7px;
 }
+
+@media (max-width: 400px) {
+  .dropdown:checked + label:before,
+.dropdown:not(:checked) + label:before {
+  width: 50px !important;
+  height: 100px !important;
+  }
+
+  .dropdown:checked + label, .dropdown:not(:checked) + label {
+    width: 100px !important;
+    height: 50px !important;
+  }
+}

@@ -9,6 +9,7 @@ const clearWeather = () => {
   document.getElementById('sun').style.display = "none";
   document.getElementsByTagName('main')[0].style.background = "linear-gradient(#202020, #111119 90.1%)";
   document.getElementsByTagName('body')[0].style.background = "#202020";
+  document.getElementById("fog").style.display = "none";
 }
 
 const makeItSnow = () => {
@@ -72,11 +73,17 @@ const makeItCloudy = () => {
 
   let cloudIncrement = 0
   let clouds = ""
-  while (cloudIncrement < 5) {
+  while (cloudIncrement < 4) {
     ++cloudIncrement
     clouds += `<div class="bigCloud" id="cloud${cloudIncrement}"><div class="largeCircle" id="circ1"><div class="largeCircle" id="circ1shadow"></div></div><div class="middleCircle" id="circ2"><div class="middleCircle" id="circ2shadow"></div></div><div class="middleCircle" id="circ3"><div class="middleCircle" id="circ3shadow"></div></div><div class="smallCircle" id="circ4"></div><div class="smallCircle" id="circ5"><div class="smallCircle" id="circ5shadow"></div></div><div class="smallCircle" id="circ6" <div class="smallCircle" id="circ6shadow"></div></div></div>`
   }
   $('.clouds').append(clouds);
+}
+
+const makeItMisty = () => {
+  clearWeather();
+
+  document.getElementById("fog").style.display = "block";
 }
 
 const capitalizeWords = (str) => {
@@ -107,6 +114,7 @@ const updateDesign = () => {
     case "Clouds":
       makeItCloudy();
       break;
+    case "Drizzle":
     case "Rain":
       makeItRain();
       break;
@@ -116,6 +124,11 @@ const updateDesign = () => {
     case "Snow":
       makeItSnow();
       break;
+    case "Mist":
+      makeItMisty();
+      break;
+    default:
+      clearWeather();
   }
 }
 
@@ -171,6 +184,9 @@ window.addEventListener("load", () => {
     return new Promise(function (resolve, reject) {
       XHR.addEventListener("load", (event) => {
         let p = JSON.parse(event.target.response)
+        if (p.message === 'Not Found') {
+          reject()
+        }
         if (p[0].altSpellings.length > 0) {
           countryCode = p[0].altSpellings[0]
           resolve()
@@ -235,6 +251,9 @@ window.addEventListener("load", () => {
     countryCode = undefined 
     weather = undefined
     event.preventDefault();
+    if (document.getElementById("weather-report").style.display === "flex"){
+      document.getElementById("weather-report").style.display = "none"
+    }
     getCountry()
     .then(() => {
       getCoordinates()
@@ -245,14 +264,17 @@ window.addEventListener("load", () => {
         })
         .catch(() => {
           alert('Oops no weather found!')
+          clearWeather()
         })
       })
       .catch(() => {
         alert('No location found with these values!')
+        clearWeather()
       })
     })
     .catch(() => {
       alert('Invalid Country!')
+      clearWeather()
     })
   });
 });

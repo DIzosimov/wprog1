@@ -57,7 +57,7 @@ body {
 #cloud2 {
     opacity: .7;
     top:13%;
-    left: 90%;
+    left: 70%;
     -webkit-transform: scale(.25);
     -moz-transform: scale(.25);
     transform: scale(.25);
@@ -343,11 +343,11 @@ body {
 }
 @-webkit-keyframes driftBg3 {
     0% {
-        left: 90%;
+        left: 70%;
         opacity: 0
     }
     2% {
-        left: 88%;
+        left: 68%;
         opacity: .65
     }
     100% {
@@ -357,11 +357,11 @@ body {
 }
 @-moz-keyframes driftBg3 {
     0% {
-        left: 90%;
+        left: 70%;
         opacity: 0
     }
     2% {
-        left: 88%;
+        left: 68%;
         opacity: .65
     }
     100% {
@@ -371,11 +371,11 @@ body {
 }
 @keyframes driftBg3 {
     0% {
-        left: 90%;
+        left: 70%;
         opacity: 0
     }
     2% {
-        left: 88%;
+        left: 68%;
         opacity: .65
     }
     100% {
