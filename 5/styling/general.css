@@ -145,6 +145,12 @@ div.circleAnimation a:hover:after {
   width: 100%;
 }
 
+@media (max-width: 400px) {
+  #title {
+      font-size: 18px !important;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media (max-width:767px) {
 
