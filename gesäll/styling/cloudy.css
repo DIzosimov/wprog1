@@ -42,13 +42,13 @@ body {
     -webkit-transform: scale(.40);
     -moz-transform: scale(.40);
     transform: scale(.40);
-    -moz-animation: driftBg2 50s;
+    -moz-animation: driftBg2 30s;
     -moz-animation-timing-function: linear;
     -mox-animation-iteration-count: infinite;
-    -webkit-animation: driftBg2 50s;
+    -webkit-animation: driftBg2 30s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
-    animation: driftBg2 50s;
+    animation: driftBg2 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 0;
@@ -56,71 +56,52 @@ body {
 
 #cloud2 {
     opacity: .7;
-    top:8%;
-    left: 50%;
-    -webkit-transform: scale(.40);
-    -moz-transform: scale(.40);
-    transform: scale(.40);
-    -moz-animation: driftBg 70s;
+    top:13%;
+    left: 90%;
+    -webkit-transform: scale(.25);
+    -moz-transform: scale(.25);
+    transform: scale(.25);
+    -moz-animation: driftBg3 50s;
     -moz-animation-timing-function: linear;
     -mox-animation-iteration-count: infinite;
-    -webkit-animation: driftBg 70s;
+    -webkit-animation: driftBg3 50s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
-    animation: driftBg 70s;
+    animation: driftBg3 50s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 0;
 }
 
 #cloud3 {
-    opacity: .7;
-    top:13%;
-    left: 90%;
-    -webkit-transform: scale(.40);
-    -moz-transform: scale(.40);
-    transform: scale(.40);
-    -moz-animation: driftBg3 90s;
-    -moz-animation-timing-function: linear;
-    -mox-animation-iteration-count: infinite;
-    -webkit-animation: driftBg3 90s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation: driftBg3 90s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    z-index: 0;
-}
-
-#cloud4 {
-    opacity: .7;
+    opacity: .3;
     top:12%;
     left: 60%;
     -webkit-transform: scale(.40);
     -moz-transform: scale(.40);
     transform: scale(.40);
-    -moz-animation: driftBg 90s;
+    -moz-animation: driftBg 70s;
     -moz-animation-timing-function: linear;
     -mox-animation-iteration-count: infinite;
     -moz-animation-delay: 11s;
-    -webkit-animation: driftBg 90s;
+    -webkit-animation: driftBg 70s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-delay: 11;
-    animation: driftBg 90s;
+    animation: driftBg 70s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 11;
     z-index: 0;
 }
-#cloud5 {
-    opacity: .7;
+#cloud4 {
+    opacity: .8;
     top:18%;
     left: 90%;
-    -webkit-transform: scale(.40);
-    -moz-transform: scale(.40);
-    transform: scale(.40);
-    -moz-animation: driftBg2 100s;
+    -webkit-transform: scale(.65);
+    -moz-transform: scale(.65);
+    transform: scale(.65);
+    -moz-animation: driftBg2 90s;
     -moz-animation-timing-function: linear;
     -mox-animation-iteration-count: infinite;
     -moz-animation-delay: 11s;
@@ -134,8 +115,8 @@ body {
     animation-delay: 11;
     z-index: 0;
 }
-#cloud6 {
-    opacity: .7;
+#cloud5 {
+    opacity: .5;
     top:24%;
     left: 120%;
     -webkit-transform: scale(.40);
@@ -251,15 +232,6 @@ body {
     border-radius: 100%;
     position: absolute;
 }
-/*Circle shadows*/
-
-/*#circShadow1 {
-    background: grey;
-    border-radius: 30px 20px 500px 20px;
-    
-    -webkit-transform: rotate(45deg);
-    z-index:2;
-}*/
 
 @-webkit-keyframes drift {
     from {
@@ -411,58 +383,3 @@ body {
         opacity: .65;
     }
 }
-.textBody {
-    height: 100%;
-    width: 1200px;
-    padding: 15px 15px 15px 15px;
-}
-.leftText {
-    width: 800px;
-    top: 600px;
-    position: absolute;
-    margin-left: 20px;
-
-    /*border-style: solid;
-    border-width: 2px;
-    border-color: black;*/
-}
-.leftText h2 {
-    font-family:"Century Gothic";
-    letter-spacing: -2px;
-    font-size: 40px;
-    font-weight: normal;
-    margin-left: 20px;
-}
-.leftText p {
-    font-family:"arial";
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 30px;
-    text-align: center;
-    z-index: 5;
-}
-.rightText {
-    width: 300px;
-    height: auto;
-    position: relative;
-    left: 875px; top: 200px;
-    /*border-style: solid;
-    border-width: 2px;
-    border-color: black;*/
-}
-
-.rightText h4 {
-    font-family:"Century Gothic";
-    font-size: 20px;
-    font-weight: normal;
-    margin-left: 20px;
-}
-.rightText p {
-    font-family:"arial";
-    font-size: 12px;
-    font-weight: normal;
-    line-height: 20px;
-    text-align: left;
-    margin: 30px;
-}
-/*put animated cloud shadows at the bottom of the page*/

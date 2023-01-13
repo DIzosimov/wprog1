@@ -1,5 +1,5 @@
 const windowResize = () => {
-  let width = window.innerWidth;
+  let width = document.body.clientWidth;
   let nav = document.getElementById('navContainer')
   let dropdown = document.getElementById('dropdownMenu')
   if (width < 768) {

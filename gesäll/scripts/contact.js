@@ -2,7 +2,7 @@ const form = document.getElementById("contactForm")
 
 
 const windowResize = () => {
-    let width = window.innerWidth;
+    let width = document.body.clientWidth;
     let nav = document.getElementById('navContainer')
     let dropdown = document.getElementById('dropdownMenu')
     let rect = document.getElementsByTagName("rect");
@@ -26,6 +26,14 @@ const windowResize = () => {
         dropdown.style.display = "none"
     }
 }
+
+  const submitForm = () => {
+    let name = document.getElementById("nameInput").value + ": "
+    let subject = document.getElementById("subjectInput").value;
+    let body = document.getElementById("messageInput").value;
+    location.href = "mailto:david.izosimov@gmail.com?subject=" + subject + "&body=" + name + body;
+  }
+
 
 window.onresize = windowResize
 window.onload = windowResize

@@ -69,10 +69,10 @@
 
           <input name="subject" class="subjectInput" type="text" placeholder="Subject">
 
-          <textarea name="body" class="messageInput" type="text" placeholder="Message" rows="1" required></textarea>
+          <textarea name="body" id="messageInput" class="messageInput" type="text" placeholder="Message" rows="1" required></textarea>
 
           <div class="buttonContainer">
-            <button type="submit" class="submitButton">
+            <button type="submit" class="submitButton" onclick="submitForm()">
               Submit
             </button>
           </div>
@@ -83,7 +83,6 @@
       <p>Message sent</p>
     </div>
   </div>
-  <!-- <script src="scripts/general.js"></script> -->
   <script src="scripts/contact.js"></script>
 </body>
 

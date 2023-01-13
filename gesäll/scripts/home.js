@@ -72,15 +72,37 @@ const makeItCloudy = () => {
 
   let cloudIncrement = 0
   let clouds = ""
-  while (cloudIncrement < 6) {
+  while (cloudIncrement < 5) {
     ++cloudIncrement
     clouds += `<div class="bigCloud" id="cloud${cloudIncrement}"><div class="largeCircle" id="circ1"><div class="largeCircle" id="circ1shadow"></div></div><div class="middleCircle" id="circ2"><div class="middleCircle" id="circ2shadow"></div></div><div class="middleCircle" id="circ3"><div class="middleCircle" id="circ3shadow"></div></div><div class="smallCircle" id="circ4"></div><div class="smallCircle" id="circ5"><div class="smallCircle" id="circ5shadow"></div></div><div class="smallCircle" id="circ6" <div class="smallCircle" id="circ6shadow"></div></div></div>`
   }
   $('.clouds').append(clouds);
 }
 
+const capitalizeWords = (str) => {
+  // Split the string into an array of words
+  let words = str.split(" ");
+
+  // Loop through each word in the array
+  for (let i = 0; i < words.length; i++) {
+    // Capitalize the first letter of the word
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+  }
+
+  // Join the array of capitalized words back into a string
+  return words.join(" ");
+}
+
 const updateDesign = () => {
-  debugger
+  let unixTimestamp = weather.sys.sunset;
+  let date = new Date(unixTimestamp * 1000);
+  document.getElementById("weather-report").style.display = "flex";
+  document.getElementById("condition").innerText = capitalizeWords(weather.weather[0].description);
+  document.getElementById("wind-speed").innerText = weather.wind.speed + " m/s";
+  document.getElementById("humidity").innerText = weather.main.humidity + " SI";
+  document.getElementById("visibility").innerText = weather.visibility + " Meters";
+  document.getElementById("temperature").innerText = weather.main.feels_like + "°";
+  document.getElementById("sunset").innerText = date.getHours() + ":" + date.getMinutes();
   switch(weather.weather[0].main) {
     case "Clouds":
       makeItCloudy();
@@ -101,11 +123,9 @@ window.addEventListener("load", () => {
   const getCoordinates = () => {
 
     let formCity = form.getElementsByClassName('city').city.value
+    formCity = capitalizeWords(formCity)
 
     const XHR = new XMLHttpRequest();
-
-    // Bind the FormData object and the form element
-    const FD = new FormData(form);
 
     return new Promise(function (resolve, reject) {
       // Define what happens on successful data submission
@@ -137,7 +157,7 @@ window.addEventListener("load", () => {
 
 
       // The data sent is what the user provided in the form
-      XHR.send(FD);
+      XHR.send();
     })
   }
 
@@ -236,30 +256,3 @@ window.addEventListener("load", () => {
     })
   });
 });
-
-
-/* 
-p.weather[0]
-{id: 803, main: 'Clouds', description: 'broken clouds', icon: '04n'}
-
-p.clouds.all
-75
-
-p.main
-{feels_like: 274.14, humidity: 94, pressure: 997, temp: 277.93, 
-  temp_max: 278.34, temp_min: 277.56}
-
-p.sys
-{type: 1, id: 1788, country: 'SE', sunrise: 1673422569, sunset: 1673446461}
-
-p.visibility
-10000 meters of visibility (max 10km)
-
-p.wind
-{speed: 5.14, deg: 180} m/s
-
-
-add choice for metric vs imperial?
-
-Rain, Clear, Cloudy, Snow
-*/
