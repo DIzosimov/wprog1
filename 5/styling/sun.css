@@ -1,0 +1,13 @@
+.sun {
+    position: fixed;
+    right: 7%;
+    bottom: 70%;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.9;
+    box-shadow: 0px 0px 40px 15px white;
+    display: none;
+}

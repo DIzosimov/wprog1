@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling/general.css">
+    <link rel="stylesheet" href="styling/about.css">
+    <link rel="stylesheet" href="styling/dropdown.css">
+    <title>About</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="h1Container">
+            <h1 id="title">
+                InstaWeather
+            </h1>
+        </div>
+
+        <div id="dropdownMenu" class="sec-center">
+            <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+            <label class="for-dropdown" for="dropdown">
+                Menu
+                <i class="uil uil-arrow-down">
+                    <img alt="arrow down" id="arrowDown" src="assets/arrowDown.svg" width="30" height="30">
+                </i>
+            </label>
+            <div class="section-dropdown">
+                <a href="home.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+        <div id="navContainer" class="navContainer circleAnimation">
+            <a href="home.html"> Home </a>
+            <a href="contact.html"> Contact</a>
+            <a href="about.html"> About</a>
+        </div>
+    </header>
+
+    <h1>Weather Information</h1>
+    <p>This website utilizes OpenWeatherMap API
+        to provide current weather information for any location.
+    </p>
+    <h2>Usage</h2>
+    <p>
+        Go to the home page and type in your desired location and get any
+        information you may need for a hike or to plan your day!
+    </p>
+    <h2>Credit</h2>
+    <p>
+        I would like to give credit to
+        <a id="creditLink" href="https://openweathermap.org/">
+            OpenWeatherMap
+        </a>
+        for providing the weather data through their API.
+    </p>
+    <script src="scripts/about.js"></script>
+</body>
+
+</html>

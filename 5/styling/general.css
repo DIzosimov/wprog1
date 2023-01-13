@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Snowball';
+  src: url(../assets/snowballFont.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@font-face {
+  font-family: 'Cloud';
+  src: url(../assets/cloudFont.ttf) format('truetype');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  background: #202020;
+  letter-spacing: normal;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#bodyContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#h1Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -6%;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+#title {
+  padding-left: 0.5em;
+  font-family: 'Snowball', sans-serif;
+  font-size: 50px;
+}
+
+h1 {
+  padding: 20px;
+  color: #ECECEE;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding-left: 15px;
+  background: linear-gradient(#202020, #111119 90.1%);
+  height: 100%;
+  color: #ECECEE;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c0c0c0;
+}
+
+a:active {
+  color: #c0c0c0;
+}
+
+#dropdownMenu {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  align-self: center;
+  width: fit-content;
+  display: none;
+}
+
+div.navContainer {
+  font-family: 'Cloud', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin-top: -2%;
+  display: none;
+}
+
+div.navContainer a {
+  text-decoration: none;
+  margin: 10px 1.5em;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+/* Circle behind */
+div.circleAnimation a:before,
+div.circleAnimation a:after {
+  position: absolute;
+  opacity: 0.85;
+  height: 100%;
+  width: 2px;
+  content: '';
+  background: #c0c0c0;
+  transition: all 0.3s;
+}
+
+div.circleAnimation a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.circleAnimation a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.circleAnimation a:hover:before,
+div.circleAnimation a:hover:after {
+  opacity: 0.85;
+  height: 2px;
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width:767px) {
+
+  /*Funkar inte i chrome responsive 
+                            viewer med "only screen and" på mobilvy*/
+  /*Insert dropdown menu*/
+
+  #title {
+    font-size: 26px;
+    align-self: center;
+  }
+
+  #h1Container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: -2%;
+  }
+
+  div.navContainer a {
+      font-size: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  #title {
+    font-size: 30px;
+  }
+
+  div.navContainer a {
+      font-size: 20px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) and (max-width: 1240px) {
+
+  #title {
+    font-size: 36px;
+  }
+
+  div.navContainer a {
+      font-size: 26px;
+    }
+}

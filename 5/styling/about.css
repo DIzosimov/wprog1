@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Cloud';
+    src: url(../assets/cloudFont.ttf) format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ECECEE;
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Cloud', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+p a {
+    color: #ECECEE;
+    text-decoration: none;
+    border-bottom: 2px solid #ECECEE;
+    transition: all 0.3s ease-in-out;
+  }
+p a:hover {
+    color: #ff8a00;
+    border-bottom-color: #ff8a00;
+  }
+

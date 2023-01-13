@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="application-name" content="1">
+  <meta name="author" content="David Izosimov">
+  <meta name="description" content="WPROG Course">
+  <meta name="generator">
+  <meta name="keywords" content="HTML">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styling/general.css">
+  <link rel="stylesheet" href="styling/home.css">
+  <link rel="stylesheet" href="styling/dropdown.css">
+  <link rel="stylesheet" href="styling/rain.css">
+  <link rel="stylesheet" href="styling/snow.css">
+  <link rel="stylesheet" href="styling/sun.css">
+  <link rel="stylesheet" href="styling/cloudy.css">
+  <link rel="stylesheet" href="styling/fog.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <title>Gesällprov</title>
+</head>
+
+<body>
+  <div id="bodyContainer">
+    <header>
+      <div id="h1Container">
+        <h1 id="title">
+          InstaWeather
+        </h1>
+      </div>
+
+      <div id="dropdownMenu" class="sec-center">
+        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+        <label class="for-dropdown" for="dropdown">
+          Menu
+          <i class="uil uil-arrow-down">
+            <img alt="arrow down" id="arrowDown" src="assets/arrowDown.svg" width="30" height="30">
+          </i>
+        </label>
+        <div class="section-dropdown">
+          <a href="home.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div id="navContainer" class="navContainer circleAnimation">
+        <a href="home.html"> Home </a>
+        <a href="contact.html"> Contact</a>
+        <a href="about.html"> About</a>
+      </div>
+    </header>
+
+    <main>
+      <div id="rainFront" class="rain front-row"></div>
+      <div id="rainBack" class="rain back-row"></div>
+
+      <div id="snowflakes" class="snowflakes" aria-hidden="true"></div>
+
+      <div class="sun" id="sun">
+        <div class="ray_box">
+          <div class="ray ray1"></div>
+          <div class="ray ray2"></div>
+          <div class="ray ray3"></div>
+          <div class="ray ray4"></div>
+          <div class="ray ray5"></div>
+          <div class="ray ray6"></div>
+          <div class="ray ray7"></div>
+          <div class="ray ray8"></div>
+          <div class="ray ray9"></div>
+          <div class="ray ray10"></div>
+        </div>
+      </div>
+
+      <div class="clouds"></div>
+
+      <div id="fog" class="fog"></div>
+
+      <form id="myForm">
+        <legend>Search Weather </legend>
+        <div class="inputContainer">
+          <label for="country">Enter Country:</label>
+          <input class="country" id="country" name="country" type="text" placeholder="Country" />
+        </div>
+        <div class="inputContainer">
+          <label for="city">Enter City:</label>
+          <input class="city" id="city" name="city" type="text" placeholder="City" />
+        </div>
+        <button id="submitButton" type="submit" value="Get Weather">Get Weather</button>
+      </form>
+
+      <div id="weather-report" class="weather-report">
+        <div class="condition">
+          <h2>Weather</h2>
+          <span id="condition"></span>
+        </div>
+        <div class="wind-speed">
+          <h2>Wind Speed</h2>
+          <span id="wind-speed"></span>
+        </div>
+        <div class="humidity">
+          <h2>Humidity</h2>
+          <span id="humidity"></span>
+        </div>
+        <div class="visibility">
+          <h2>Visibility</h2>
+          <span id="visibility"></span>
+        </div>
+        <div class="temperature">
+          <h2>Temperature</h2>
+          <span id="temperature"></span>
+        </div>
+        <div class="sunset">
+          <h2>Sunset</h2>
+          <span id="sunset"></span>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="scripts/home.js"></script>
+  <script src="scripts/general.js"></script>
+</body>
+
+</html>

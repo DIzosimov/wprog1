@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styling/general.css">
+  <link rel="stylesheet" href="styling/contact.css">
+  <link rel="stylesheet" href="styling/dropdown.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <title>Contact Page</title>
+</head>
+
+<body>
+  <div class="bodyContainer">
+    <header>
+      <div id="h1Container">
+        <h1 id="title">
+          InstaWeather
+        </h1>
+      </div>
+
+      <div id="dropdownMenu" class="sec-center">
+        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+        <label class="for-dropdown" for="dropdown">
+          Menu
+          <i class="uil uil-arrow-down">
+            <img alt="arrow down" id="arrowDown" src="assets/arrowDown.svg" width="30" height="30">
+          </i>
+        </label>
+        <div class="section-dropdown">
+          <a href="home.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div id="navContainer" class="navContainer circleAnimation">
+        <a href="home.html"> Home </a>
+        <a href="contact.html"> Contact</a>
+        <a href="about.html"> About</a>
+      </div>
+    </header>
+    <div id="container" class="container">
+      <div id="svgContainer" class="svgContainer">
+        <svg id="svg" version="1.1" width="100%" height="100%" viewBox="0 0 800 800" fill="none" stroke="#000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff8a00" />
+              <stop offset="100%" stop-color="#e52e71" />
+            </linearGradient>
+          </defs>
+          <rect 
+            width="750" 
+            height="750" 
+            style="fill:#fff;stroke-width:20;stroke:url(#linear);fill-opacity:0.0"
+          />
+        </svg>
+        <form 
+        action="mailto:david.izosimov@gmail.com" 
+        method="GET" 
+        enctype="text/plain" 
+        id="contactForm" 
+        class="contactForm">
+          <div class="title">
+            <h1>Contact Me</h1>
+          </div>
+          <input name="name" class="nameInput" type="text" placeholder="Name" required>
+
+          <input name="subject" class="subjectInput" type="text" placeholder="Subject">
+
+          <textarea name="body" id="messageInput" class="messageInput" type="text" placeholder="Message" rows="1" required></textarea>
+
+          <div class="buttonContainer">
+            <button type="submit" class="submitButton" onclick="submitForm()">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/contact.js"></script>
+</body>
+
+</html>
